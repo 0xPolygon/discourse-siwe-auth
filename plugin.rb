@@ -19,7 +19,10 @@ gem 'keccak', '1.3.0', require: false
 gem 'zip', '2.0.2', require: false
 gem 'ffi', '1.17.4', require: false
 gem 'mini_portile2', '2.8.0', require: false
-gem 'rbsecp256k1', '6.0.0', require: false
+gem 'rbsecp256k1',
+    '6.0.0',
+    source: "file://#{File.expand_path('vendor/gems', __dir__)}",
+    require: false
 gem 'konstructor', '1.0.2', require: false
 gem 'ffi-compiler', '1.0.1', require: false
 gem 'scrypt', '3.0.7', require: false
